@@ -1,16 +1,12 @@
 #ifndef SORT_H
 #define SORT_H
-
+#include <vector>
 
 class Sort
 {
-public:
-    Sort();
-    ~Sort() {};
-    virtual void exec() {};
-    void swap(int&, int&);
-private:
-    
-};
+    public:
+     virtual std::vector<int> sort(std::vector<int> list) = 0;
 
+};
 #endif
+    

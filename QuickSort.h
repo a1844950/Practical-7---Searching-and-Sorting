@@ -8,13 +8,7 @@
 class QuickSort: public Sort
 {
 public:
-    QuickSort();
-    ~QuickSort() {};
-    void exec(std::vector<int> &toSort, int, int);
-    
-private:
-    int Split(std::vector<int> &toSort, int, int, int);
-    
+      std::vector<int> sort(std::vector<int> list);
 };
 
 #endif
