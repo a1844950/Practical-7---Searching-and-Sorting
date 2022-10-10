@@ -1,31 +1,24 @@
+#include <iostream>
 #include <vector>
 #include "BubbleSort.h"
 
 using namespace std;
 
-BubbleSort::BubbleSort()
-{
-
-}
-
-void BubbleSort::exec(vector<int> &toSort)
-{
-    bool wasSwap = 0;
-    for (unsigned int i = 0; i < toSort.size(); i++)
+vector<int>BubbleSort::sort(vector<int> list){
+    int n = list.size
+    for ( int i = 0; i < n-1; i++)
     {
-        for (unsigned int j = 0; j < toSort.size()-1; j++)
+        for (int j = 0; j < n-i-1; j++)
         {
-            if(toSort.at(j) > toSort.at(j+1)) // Compare the pair and swap if necessary
+            if(list[j] > list[j+1]) 
             {
-                swap(toSort.at(j), toSort.at(j+1));
-                wasSwap = 1;
+                swap(list[j], list[j+1]);
+            
             }
         }
 
-        if( !wasSwap ) // If there is no swap, then the list is in order
-        {
-            break;
-        }
+    
     }
+    return list
 }
 
